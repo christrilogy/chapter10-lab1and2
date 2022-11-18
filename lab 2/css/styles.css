@@ -36,7 +36,7 @@ video{
   display: block;
 }
 
-.tab-desk, #nav-links,.desktop{
+.tab-desk, #nav-links{
   display: none;
 }
 
@@ -392,6 +392,10 @@ tr:nth-child(odd) {
   aside{
     grid-column: 1 / span 4;
     font-size: 3em;
+  }
+
+  .desktop{
+    display: none;
   }
 }
 
