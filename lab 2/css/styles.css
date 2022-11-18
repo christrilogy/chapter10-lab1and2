@@ -25,9 +25,10 @@ img{
 }
 
 video{
-  
+
 }
 /*Style rules for mobile viewport*/
+
 
 
 /* Style rules to show mobile class and hide tab-desk class*/
@@ -35,7 +36,7 @@ video{
   display: block;
 }
 
-.tab-desk{
+.tab-desk, #nav-links,.desktop{
   display: none;
 }
 
@@ -45,7 +46,7 @@ h1 {
   text-align: center;
   font-family: 'Emblema One', cursive;
   color: #000000;
-
+  margin: 2% 0 0 3%;
 }
 
 h3 {
@@ -66,28 +67,28 @@ nav {
   background-color: #000000;
 }
 
-nav ul {
-  list-style-type: none;
+.mobile-nav a {
+  color: #fff;
   text-align: center;
-}
-
-nav li {
-  display: block;
-  font-size: 1.5em;
-  font-family: Geneva, Ariel, sans-serif;
-  font-weight: bold;
-  border-top: 0.5px solid #f6eee4;
-}
-
-nav li a{
-  display: block;
-  color: #f6eee4;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 2em;
-  padding-right: 2em;
+  font-size: 2em;
   text-decoration: none;
+  padding: 3%;
+  display: block;
+}
 
+.mobile-nav a.nav-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f6eee4;
+  padding: 2%;
+}
+
+.nav-icon div {
+  height: 40px;
+  width: 40px;
+  background-color: #2a1f14;
 }
 
 /* Style rules  for main content */
@@ -169,6 +170,18 @@ figcaption{
   font-weight: bold;
 }
 
+#questions p {
+  cursor: pointer;
+}
+#answer {
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+#answer h2 {
+  display: none;
+}
 /* Style rules for form elements */
 fieldset {
   margin-bottom: 2%;
@@ -233,15 +246,24 @@ footer a{
   display: none;
 }
 
-
 nav li {
   border-top: none;
   display: inline-block;
   font-size: 1.25em;
+  font-family: Geneva, Ariel, sans-serif;
+  font-weight: bold;
 }
 
 nav li a {
   padding: 0.5em;
+  display: block;
+  color: #f6eee4;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
 }
 
 .grid{
